@@ -1,0 +1,160 @@
+一、Recap: 权限
+
+r:读
+
+w:写
+
+x：执行
+
+
+1:类型
+
+后9位每3个一组
+
+第1组：所有者，RWX
+
+第2组：所在组,RWX
+
+第3组：其它用户,RWX
+
+
+
+rw-r--r--: 110 100 100
+
+rwxr-xr-x: 111 101 101
+
+
+
+最大的是：7
+
+最小的是：0
+
+rwxrwxrwx: 777 （Web程序的上传目录）
+
+-----------：000
+
+只读：R--,100，4
+
+读写：RW-,110，6
+
+读取与执行：R-X，101，5
+
+所有权限：7
+
+
+
+a, chmod的两种方法
+
+chmod +/- rwx filename/directory
+
+chmod mask filename/directory
+
+
+
+b, 权限掩码以及原理
+
+
+
+二、用户管理常用命令
+
+1、创建、删除组
+
+groupadd:
+
+groupdel:
+
+
+
+tip: 创建新用户时，会自动创建同名用户组
+
+2、查看组信息
+
+cat /etc/group
+
+
+
+3、修改文件或目录的所在组
+
+sudo chgrp 组名 文件或目录
+
+-默认不修改子目录组信息，要递归修改：
+
+chgrp -R 组名 目录名
+
+
+
+4、添加用户
+
+useradd
+
+-g:设置所在用户组
+
+-m :自动创建家目录
+
+
+
+5、查看用户信息
+
+cat /etc/passwd
+
+cat /etc/passwd | grep 用户名
+
+lester:   x:  1000:  1000:  Lester,,,  :   /home/lester  :/bin/bash
+
+lester:用户名
+
+x:已经设置密码
+
+1000：用户标识
+
+1000: 组标识
+
+Lester: 用户名
+
+/home/lester: 家目录
+
+/bin/bash： 登录时使用的bash
+
+
+
+
+
+6、设置用户密码
+
+passwd 用户名
+
+不跟用户名，修改自己的密码
+
+
+
+7、删除用户
+
+userdel 用户名
+
+-r: 删除用户时，同时删除家目录
+
+
+
+8、查看id
+
+方法一： cat /etc/passwd | grep 用户名
+
+方法二：id 
+
+id 用户名：显示特定用户的标识
+
+id ：显示当前用户的标识
+
+
+
+9、查看当前登录的用户
+
+who
+
+：0表示当前终端
+
+
+
+10、查看当前用户的账号名
+
+whoami

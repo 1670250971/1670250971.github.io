@@ -1,0 +1,101 @@
+sudo apt-get install openssh-server
+
+sudo /etc/init.d/ssh start
+
+sudo /etc/init.d/ssh stop
+
+
+
+ssh客户端
+
+-Linux,Mac所有版本自带ssh
+
+-Windows 7开始自带ssh
+
+-第三方工具：
+
+	Xshell
+
+	Putty
+
+
+
+ssh远程登录格式
+
+ssh [-p port] username @ host
+
+
+
+username:lester
+
+password:zjnu1234
+
+host: 192.168.56.1 (NAT=>10.0.2.15)
+
+
+
+一、SSH配置免密码登录
+
+1、原理：
+
+a.生成一个密钥对，在客户机上存放私钥，在服务器上存放公钥
+
+b. 每次登录时，取私钥并与服务器上的公钥配对，配对成功表示认证通过
+
+
+
+2、步骤
+
+Q1: 如何生成？
+
+ssh-keygen(key generator): 根据机器的特征值生成id_rsa，id_rsa.pub
+
+
+
+Q2：生成后的密钥存放在何处？
+
+存放在用户目录下的.ssh
+
+
+
+Q3：服务器如何配置
+
+任务：id_rsa.pub文件的内容添加到远程主机.ssh目录下的authorized_keys文件
+
+01、Linux系统中
+
+ssh-copy-id [-p port] username@host
+
+02、Windows
+
+a. 可视化方式复制
+
+b. scp: secure copy，用于远程的安全拷贝
+
+   scp [-P port] 本地文件 username@host：Desktop/01.py
+
+   cat id_rsa.pub >~/.ssh/authorized_keys
+
+
+
+SCP扩展
+
+1、本地文件上传至服务器
+
+2、远程文件下载到本地
+
+任务：将远程主机Desktop下的hello.py下载
+
+ scp -P 22 lester@192.168.56.1:Desktop/hello.py hello_world.py
+
+
+
+3、将本地文件夹上传至服务器
+
+scp -r zjnu lester@192.168.56.1:Desktop
+
+
+
+4、将远程文件夹下载至本地
+
+scp -r lester@192.168.56.1:Desktop/01 01_copy
