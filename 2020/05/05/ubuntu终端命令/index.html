@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>ubuntu终端命令 | 我的主页</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1、文件与目录 分区：Linux没有分区概念 Linux以目录的组织，只有根目录&#x2F; &#x2F;bin ：可执行文件 &#x2F;sbin: 供超级用户使用的可执行文件 s&#x3D;super &#x2F;etc: 配置文件 eg: 源地址： &#x2F;etc&#x2F;apt&#x2F;sources.list &#x2F;home: 家目录，给用户存储文件用 -每一个用户都有一个用户名命名的文件夹 -收藏夹中的主目录&#x3D;用户自己的家目录 -同时可以看收藏夹中也有家目录各">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ubuntu终端命令">
+<meta property="og:url" content="http://1670250971.github.io/2020/05/05/ubuntu%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4/index.html">
+<meta property="og:site_name" content="我的主页">
+<meta property="og:description" content="1、文件与目录 分区：Linux没有分区概念 Linux以目录的组织，只有根目录&#x2F; &#x2F;bin ：可执行文件 &#x2F;sbin: 供超级用户使用的可执行文件 s&#x3D;super &#x2F;etc: 配置文件 eg: 源地址： &#x2F;etc&#x2F;apt&#x2F;sources.list &#x2F;home: 家目录，给用户存储文件用 -每一个用户都有一个用户名命名的文件夹 -收藏夹中的主目录&#x3D;用户自己的家目录 -同时可以看收藏夹中也有家目录各">
+<meta property="article:published_time" content="2020-05-05T12:43:53.000Z">
+<meta property="article:modified_time" content="2020-05-05T12:50:29.767Z">
+<meta property="article:author" content="yangxiaojun">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="我的主页" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">我的主页</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">浙江师范大学</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://1670250971.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-ubuntu终端命令" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/05/05/ubuntu%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4/" class="article-date">
+  <time datetime="2020-05-05T12:43:53.000Z" itemprop="datePublished">2020-05-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      ubuntu终端命令
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1、文件与目录</p>
+<p>分区：Linux没有分区概念</p>
+<p>Linux以目录的组织，只有根目录/</p>
+<p>/bin ：可执行文件</p>
+<p>/sbin: 供超级用户使用的可执行文件</p>
+<p>s=super</p>
+<p>/etc: 配置文件</p>
+<p>eg: 源地址： /etc/apt/sources.list</p>
+<p>/home: 家目录，给用户存储文件用</p>
+<p>-每一个用户都有一个用户名命名的文件夹</p>
+<p>-收藏夹中的主目录=用户自己的家目录</p>
+<p>-同时可以看收藏夹中也有家目录各子目录的快捷方式</p>
+<p>/mnt: 挂载设备用</p>
+<p>/boot: 引导程序</p>
+<p>操作系统：内核-&gt;系统调用-&gt;内置的命令行或基本的图形程序-&gt;第三方应用-&gt;用户</p>
+<p>二、Linux终端与命令</p>
+<p>1、ls</p>
+<p>-l :详细输出文件或目录信息</p>
+<p>-h :人性化方式显示文件大小</p>
+<p>Bytes&lt;KB&lt; MB &lt;GB &lt;TB &lt;PB&lt;EB &lt;ZB&lt;YB</p>
+<p>-a :显示隐藏文件（以.开始）</p>
+<p>.： 当前目录</p>
+<p>.. : 上一级目录</p>
+<p>~： 表示用户自己的家目录</p>
+<p>= /home/username</p>
+<p>ls -a -h = ls -al</p>
+<p>2、 pwd</p>
+<p>print working directory</p>
+<p>pwd : 显示当前的工作目录</p>
+<p>3、cd 切换文件夹</p>
+<p>change directory</p>
+<p>cd /</p>
+<p>cd ~</p>
+<p>cd ..</p>
+<p>Linux中的命令区分大小写</p>
+<p>4、touch</p>
+<p>格式：touch 文件名</p>
+<p>如果文件不存在则新建一个</p>
+<p>如果文件存在则修改最近修改时间</p>
+<p>5、mkdir</p>
+<p>创建目录make directory</p>
+<p>支持同时创建多个文件夹：</p>
+<p>-同级目录，用空格间隔 mkdir a b</p>
+<p>-层级目录，用-p参数 mkdir -p a/b/</p>
+<p>同级目录下，文件与文件夹不能重名</p>
+<p>6、rmdir</p>
+<p>删除空目录remove directory</p>
+<p>终端中删除的内容不进回收站</p>
+<p>7、rm</p>
+<p>删除文件remove</p>
+<p>可以使用通配符：</p>
+<p>–*:任意多字符</p>
+<p>–?:一个字符</p>
+<p>rm -r 非空目录名： 删除非空目录</p>
+<p>终端中删除的内容不进回收站！！</p>
+<p>8、clear</p>
+<p>清屏</p>
+<p>9、技巧：</p>
+<p>（1)利用上下键</p>
+<p>(2)使用Tab: 命令与路径自动补全</p>
+<p>(3)区分相对路径与绝对路径：</p>
+<p>-绝对路径：从/开始的路径</p>
+<p>因为<del>=/home/username，所以</del>开头的也称为绝对路径</p>
+<p>-相对路径：从当前目录开始的路径</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://1670250971.github.io/2020/05/05/ubuntu%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4/" data-id="ck9twvas400008gjxa3pn8cml" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/05/05/sudo%E7%BB%84%E6%9D%83%E9%99%90%EF%BC%8C%E8%BF%9C%E7%A8%8B%E6%96%87%E4%BB%B6%E4%BF%AE%E6%94%B9/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">sudo组权限，远程文件修改</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/05/05/ubuntu%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4/">ubuntu终端命令</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/05/sudo%E7%BB%84%E6%9D%83%E9%99%90%EF%BC%8C%E8%BF%9C%E7%A8%8B%E6%96%87%E4%BB%B6%E4%BF%AE%E6%94%B9/">sudo组权限，远程文件修改</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/05/ssh%EF%BC%8Cnat%E5%91%BD%E4%BB%A4/">ssh，nat命令</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/05/ssh%E5%91%BD%E4%BB%A4%E7%BB%AD/">ssh命令续</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/05/github%E4%BD%BF%E7%94%A8/">github使用</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 yangxiaojun<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

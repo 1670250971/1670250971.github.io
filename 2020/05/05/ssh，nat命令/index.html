@@ -5,16 +5,16 @@
   
 
   
-  <title>github pages | 我的主页</title>
+  <title>ssh，nat命令 | 我的主页</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="github pages-静态展示页面的服务 通常使用html、markdown文件 需要条件：username.github.io 静态站点建站系统-octpress (ruby) -pelican(python) -hexo (node.js) 安装过程：-node.js npm(包管理器，相当于python中的pip) -sudo npm install -g hexo-cli 使用-初始化">
+  <meta name="description" content="远程管理相关命令 Ctrl+Alt+T:启动终端 （一）shutdown： 1、默认一分钟关机 2、取消: shutdown -c 3、shutdown -r 重启 4、定时任务： +num; hh:mm, now 远程管理时尽量不要关机或重启 （二）ifconfig 1、ifconfig 2、ifconfig | grep inet (三）ping  默认一直发送数据包 按CTRL+C中止 （四">
 <meta property="og:type" content="article">
-<meta property="og:title" content="github pages">
-<meta property="og:url" content="http://1670250971.github.io/2020/05/05/github-pages/index.html">
+<meta property="og:title" content="ssh，nat命令">
+<meta property="og:url" content="http://1670250971.github.io/2020/05/05/ssh%EF%BC%8Cnat%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="我的主页">
-<meta property="og:description" content="github pages-静态展示页面的服务 通常使用html、markdown文件 需要条件：username.github.io 静态站点建站系统-octpress (ruby) -pelican(python) -hexo (node.js) 安装过程：-node.js npm(包管理器，相当于python中的pip) -sudo npm install -g hexo-cli 使用-初始化">
-<meta property="article:published_time" content="2020-05-05T10:46:28.000Z">
-<meta property="article:modified_time" content="2020-05-05T10:57:46.344Z">
+<meta property="og:description" content="远程管理相关命令 Ctrl+Alt+T:启动终端 （一）shutdown： 1、默认一分钟关机 2、取消: shutdown -c 3、shutdown -r 重启 4、定时任务： +num; hh:mm, now 远程管理时尽量不要关机或重启 （二）ifconfig 1、ifconfig 2、ifconfig | grep inet (三）ping  默认一直发送数据包 按CTRL+C中止 （四">
+<meta property="article:published_time" content="2020-05-05T12:43:03.000Z">
+<meta property="article:modified_time" content="2020-05-05T12:49:28.595Z">
 <meta property="article:author" content="yangxiaojun">
 <meta name="twitter:card" content="summary">
   
@@ -69,10 +69,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-github-pages" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-ssh，nat命令" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/05/05/github-pages/" class="article-date">
-  <time datetime="2020-05-05T10:46:28.000Z" itemprop="datePublished">2020-05-05</time>
+    <a href="/2020/05/05/ssh%EF%BC%8Cnat%E5%91%BD%E4%BB%A4/" class="article-date">
+  <time datetime="2020-05-05T12:43:03.000Z" itemprop="datePublished">2020-05-05</time>
 </a>
     
   </div>
@@ -83,7 +83,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      github pages
+      ssh，nat命令
     </h1>
   
 
@@ -91,27 +91,48 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="github-pages"><a href="#github-pages" class="headerlink" title="github pages"></a>github pages</h3><p>-静态展示页面的服务</p>
-<p>通常使用html、markdown文件</p>
-<p>需要条件：username.github.io</p>
-<h3 id="静态站点建站系统"><a href="#静态站点建站系统" class="headerlink" title="静态站点建站系统"></a>静态站点建站系统</h3><p>-octpress (ruby)</p>
-<p>-pelican(python)</p>
-<p>-hexo (node.js)</p>
-<h3 id="安装过程："><a href="#安装过程：" class="headerlink" title="安装过程："></a>安装过程：</h3><p>-node.js npm(包管理器，相当于python中的pip)</p>
-<p>-sudo npm install -g hexo-cli</p>
-<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>-初始化：hexo init</p>
-<p>-创建：hexo n “标题“</p>
-<p>-生成：hexo g</p>
-<p>-预览：hexo s</p>
-<h3 id="发布到git"><a href="#发布到git" class="headerlink" title="发布到git"></a>发布到git</h3><p>-使用hexo一键发布: hexo d</p>
-<p>-手动push方式: 将publish目录，git push origin master</p>
-<p>Hexo安装：<a href="http://ms.zjer.cn/index.php?r=studio/post/view&amp;sid=531&amp;id=2380781" target="_blank" rel="noopener">http://ms.zjer.cn/index.php?r=studio/post/view&amp;sid=531&amp;id=2380781</a> </p>
-<p>Markdown简明教程：<a href="https://github.com/Melo618/Simple-Markdown-Guide" target="_blank" rel="noopener">https://github.com/Melo618/Simple-Markdown-Guide</a></p>
+        <p>远程管理相关命令</p>
+<p>Ctrl+Alt+T:启动终端</p>
+<p>（一）shutdown：</p>
+<p>1、默认一分钟关机</p>
+<p>2、取消: shutdown -c</p>
+<p>3、shutdown -r 重启</p>
+<p>4、定时任务： +num; hh:mm, now</p>
+<p>远程管理时尽量不要关机或重启</p>
+<p>（二）ifconfig</p>
+<p>1、ifconfig</p>
+<p>2、ifconfig | grep inet</p>
+<p>(三）ping </p>
+<p>默认一直发送数据包</p>
+<p>按CTRL+C中止</p>
+<p>（四）ssh</p>
+<p>Linux中非常常用的一个工具，可以利用SSH客户端登录SSH服务器</p>
+<p>Windows下的Xshell-》 Linux上的SSH服务器</p>
+<p>SSH端口：默认22</p>
+<p>Windows下的常用的ssh客户端：putty、xshell，secureCRT。</p>
+<p>Windows10自带了ssh命令行客户端</p>
+<p>所有类Unix系统均自带ssh命令行</p>
+<p>host=192.168.56.1</p>
+<p>p=22</p>
+<p>user= lester</p>
+<p>pwd=..</p>
+<p>格式：ssh -p port user@host</p>
+<p>1、在Linux上安装ssh服务器</p>
+<p>openssh-server包</p>
+<p>sudo /etc/init.d/ssh start</p>
+<p>sudo /etc/init.d/ssh stop</p>
+<p>2、要深入理解计算机网络，特别是NAT</p>
+<p>主要两种情况：</p>
+<p>a，桥接网络（家里路由器开通了DHCP推荐）</p>
+<p>virtual 、host处于同一个网段</p>
+<p>用ipconfig 查出当前的地址</p>
+<p>hostname = inet地址</p>
+<p>b,NAT或NAT网络</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://1670250971.github.io/2020/05/05/github-pages/" data-id="ck9tsufj20000wxjxc5df7inl" class="article-share-link">Share</a>
+      <a data-url="http://1670250971.github.io/2020/05/05/ssh%EF%BC%8Cnat%E5%91%BD%E4%BB%A4/" data-id="ck9twvasb00028gjx46pxeuxi" class="article-share-link">Share</a>
       
       
     </footer>
@@ -120,19 +141,19 @@
     
 <nav id="article-nav">
   
-    <a href="/2020/05/05/%E5%88%AB%E5%90%8D%E7%99%BB%E5%BD%95%EF%BC%8C%E7%94%A8%E6%88%B7%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/05/05/sudo%E7%BB%84%E6%9D%83%E9%99%90%EF%BC%8C%E8%BF%9C%E7%A8%8B%E6%96%87%E4%BB%B6%E4%BF%AE%E6%94%B9/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          别名登录，用户权限命令
+          sudo组权限，远程文件修改
         
       </div>
     </a>
   
   
-    <a href="/2020/05/05/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/05/05/ssh%E5%91%BD%E4%BB%A4%E7%BB%AD/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">ssh命令续</div>
     </a>
   
 </nav>
